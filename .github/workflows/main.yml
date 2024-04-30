@@ -1,0 +1,21 @@
+name: Run tests
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: |
+        npm install jsverify
+        npm install async
+
+    - name: Run tests
+      run: node code.test.js
