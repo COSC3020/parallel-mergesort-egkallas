@@ -29,7 +29,3 @@ function merge(x, lo, mid, hi, tmp) {
     }
 }
 
-array = [3, 2, 1]
-mergesort(array).then(() => {
-    console.log(array); 
-});
