@@ -14,4 +14,4 @@ the function and run automatically when you commit through a GitHub action.
 What is the span of the parallel program, in terms of worst-case $\Theta$? Hint:
 It may help to consider the DAG of the parallel program.
 
-The span of parallel merge sort in terms of the worst case is $\Theta(\frac{p}{n}logn)$ because there are $log n$ levels of recursion in the DAG and $n$ amount of items to be merged. 
+The span of parallel merge sort in terms of the worst case is $\Theta(\frac{p}{n}\log{n})$ because there are $log n$ levels of recursion in the DAG and $n$ amount of items to be merged. 
